@@ -1,8 +1,21 @@
+import 'package:dicee/dicepage/dice_page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   return runApp(
-    MaterialApp(
+    ProviderScope(
+        child: DiceApp(),
+    )
+  );
+}
+
+class DiceApp extends StatelessWidget {
+  const DiceApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
@@ -11,13 +24,6 @@ void main() {
         ),
         body: DicePage(),
       ),
-    ),
-  );
-}
-
-class DicePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
+    );
   }
 }

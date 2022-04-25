@@ -4,13 +4,23 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
+
+  riverpod: 1.0.3
+  flutter_riverpod: 1.0.3
+
+  state_notifier: ^0.7.2+1
+
+  build_runner: ^2.1.10
+
+  freezed: ^2.0.2
+  freezed_annotation: ^2.0.1
 
 dev_dependencies:
   flutter_test:
